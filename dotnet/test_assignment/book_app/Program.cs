@@ -73,10 +73,6 @@ namespace ConsoleApp2
 
             while (true)
             {
-                if (exit == 1)
-                {
-                    break;
-                }
                 Console.WriteLine("\n====== BOOK SHOP MENU ======");
                 Console.WriteLine("1. Add Book");
                 Console.WriteLine("2. Sell Book");
@@ -106,8 +102,7 @@ namespace ConsoleApp2
 
                     case 5:
                         Console.WriteLine("Thank You");
-                        exit = 1;
-                        break;
+                        return;
 
                     default:
                         Console.WriteLine("Please put correct input");
