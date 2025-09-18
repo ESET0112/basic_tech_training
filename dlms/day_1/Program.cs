@@ -73,9 +73,8 @@ namespace DlmsCosemExample
             // OBIS code for Active Energy Import (1-0:1.8.0.255)
             var obis = new ObisCode(1, 0, 1, 8, 0, 255);
 
-            // Class ID for Register object is 3
             ushort classId = 3;
-            byte attributeId = 2; // e.g., value attribute
+            byte attributeId = 2; 
 
             byte[] apdu = GetRequestApdu.CreateGetRequest(obis, classId, attributeId);
 
